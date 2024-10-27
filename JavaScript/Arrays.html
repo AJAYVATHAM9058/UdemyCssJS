@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays JAVASCRIPT</title>
+</head>
+<body>
+    
+    <script lang="javascript" type="text/javascript">
+
+        function sorting(arr){
+            var i,j,temp;
+            for(i = 0;i<arr.length-1;i++){
+                for(j=0;j<arr.length-i-1;j++){
+                    if(arr[j] > arr[j+1]){
+                        temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                }
+            }
+        }
+
+
+        var arr = new Array(7,2,8,1,10,65,21,3,5,6);
+
+        //printing the array
+        var i;
+        document.write("Before Sorting  : <br>");
+        for(i=0;i<arr.length;i++){
+            document.write(arr[i]+" &nbsp&nbsp&nbsp&nbsp");
+        }
+
+
+        sorting(arr);   
+
+        document.write("<br><br>After Sorting  : <br>");
+        for(i=0;i<arr.length;i++){
+            document.write(arr[i]+" &nbsp&nbsp&nbsp&nbsp");
+        }
+
+
+
+    </script>
+
+</body>
+</html>
