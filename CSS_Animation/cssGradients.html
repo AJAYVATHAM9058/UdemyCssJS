@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <style>
+        #grad1{
+            height: 100px;
+            width: 500px;
+            border: 1px solid green;
+            background : linear-gradient(orange,white,green);
+            background : linear-gradient(to right,orange,white,green);
+            background : linear-gradient(to left,orange,white,green);
+            background : linear-gradient(to bottom,orange,white,green);
+            background : linear-gradient(0deg,orange,white,green);
+            background : linear-gradient(orange,white,green); 
+        }
+
+        #grad2{
+            height: 25vh;
+            width: 50vw;
+            border-radius:75px 90px 100px;
+            background: radial-gradient(gold 10%,rgb(6, 148, 101) 10%, rgba(217, 228, 59, 0.937) 10%);
+            background: radial-gradient(orange 20%,white 60%, green 80%);
+            background: repeating-radial-gradient(orange,white, green 25%);
+
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="grad1"></div>
+    <br><br><br>
+    <div id="grad2"></div>
+
+</body>
+</html>

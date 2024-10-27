@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+         div#mydiv{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 1000ms;
+            animation-iteration-count: 10;
+            position: relative;
+            animation-direction: normal;
+        } 
+
+        @keyframes example{
+            /* from{ background-color: rgb(77, 255, 0);}
+            to {background-color: rgb(255, 0, 183);} */
+
+            0% {background-color: red; border: 2px solid black; left: 0px;top: 0px;}
+            25% { background-color: green; left: 250px; top:0px; transform: rotateZ(100deg);}
+            50% {background-color: yellow; left: 250px;top: 250px; transform: rotateZ(18000000deg);}
+            75%{ background-color: black; left: 0px; top: 250px;}
+            100% { background-color: red;left: 0px; top: 0px;}
+
+        }
+
+
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        div#mydiv1{
+            /* transform: skewY(-20deg); */
+            transform: skewY(10deg);
+            transform: rotateZ(50deg);
+
+        }
+        div#mydiv2{
+            margin: 50px;
+            transform: skewY(0deg);
+        }
+      
+    </style>
+
+</head>
+<body>
+
+    <div id="mydiv"></div>
+    <br><br>
+
+
+    <div id="mydiv2"> This is Box 1</div>
+    <br>
+    <div id="mydiv1">
+        This is box 2
+    </div>
+
+
+
+</body>
+</html>
