@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* border: 2px solid black; */
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            
+        }
+        
+        section{
+            border: 2px solid red;
+            height: 600px;
+            width: 700px;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+           
+            
+            
+            
+        }
+        
+        img{
+          
+           min-height: 600px;
+            min-width: 700px;
+            animation: models 5s 0s ease infinite alternate;
+
+
+        }
+
+      
+
+        @keyframes models {
+            
+            0%{
+                transform: translateX(0%);
+            }
+            30%{transform: translateX(-100%);}
+            60%{transform: translateX(-200%);}
+            100%{transform: translateX(-300%);}
+            
+            
+        }
+
+
+
+        @media  (min-width:300px) and (max-width:500px){
+            
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                place-items: center;
+            }
+            
+            section{
+                border: 2px solid green;
+                height: 400px;
+                width: 300px;
+                display: flex;
+                overflow: hidden;
+            }
+
+            img{
+                min-height: 400px;
+                min-width: 300px;
+                animation: models1 5s 0s ease infinite alternate;
+                
+            }
+
+            @keyframes models1 {
+            
+            0%{
+                transform: translateX(0%);
+            }
+            30%{transform: translateX(-100%);}
+            60%{transform: translateX(-200%);}
+            100%{transform: translateX(-300%);}
+            
+            
+        }
+            
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    
+  
+        <section>
+             <img src="./Kajal aggarwal (2).jpg" alt="Kaja Agarwal"> 
+            <img src="./msg-1002040052295-37.jpg" alt="Kaja Agarwal">
+            <img src="./msg-1002095371226-25.jpg" alt="Kaja Agarwal">
+            <img src="./SAVE_20221117_160307.jpg" alt="Kaja Agarwal"> 
+        </section>
+   
+</body>
+</html>
